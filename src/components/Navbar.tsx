@@ -8,6 +8,7 @@ import Cart from './Cart'
 import { getServerSideUser } from '@/lib/payload-utils'
 import { cookies } from 'next/headers'
 import UserAccountNav from './UserAccountNav'
+import { ThemeSwitch } from './ui/theme-switch'
 
 const Navbar = async () => {
  const nextCookies = cookies()
@@ -58,7 +59,10 @@ const Navbar = async () => {
                     {user ? null : (
                        <div className='flex lg:ml-6'><span className='h-6 w-px bg-gray-200' aria-hidden='true' /></div>
                        )}
-                     
+                    
+                    <div className="flow-root ml-4 lg:ml-6">
+                      <ThemeSwitch />
+                    </div>
                      <div className="ml-4 flow-root ">
                         <Cart />
                      </div>
