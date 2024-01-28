@@ -131,7 +131,7 @@ const origin = searchParams.get('origin')
                                 <span className='w-full border-t' />
                             </div>
                             <div className="relative flex justify-center text-xs uppercase">
-                                <span className="bg-background px-2 text-muted-foreground">
+                                <span className="bg-white px-2 text-muted-foreground">
                                     or
                                 </span>
                             </div>
